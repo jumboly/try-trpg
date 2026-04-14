@@ -4,10 +4,10 @@
 ナラティブ（能力適用可否・描写）は Claude（GM）が担当する前提。
 
 CLI:
-    python3 ttrpg.py judge --pl 1 --gm 0
-    python3 ttrpg.py damage --weapon --armor
-    python3 ttrpg.py attack --pl 1 --gm 0 --weapon
-    python3 ttrpg.py apply-damage --state healthy --severity 重症
+    python3 TryTRPG.py judge --pl 1 --gm 0
+    python3 TryTRPG.py damage --weapon --armor
+    python3 TryTRPG.py attack --pl 1 --gm 0 --weapon
+    python3 TryTRPG.py apply-damage --state healthy --severity 重症
 """
 
 from __future__ import annotations

@@ -2,7 +2,7 @@
 
 [Claude Code](https://claude.com/claude-code) を GM（ゲームマスター）、あなたを PL（プレイヤー）として遊ぶ、軽量テーブルトーク RPG セット。
 
-ルールブック（`TTRPG.md`）と、セッション進行のための GM 指示書（`CLAUDE.md`）、ダイスロール・状態遷移を公正に処理するための Python ツール（`ttrpg.py`）で構成されます。
+ルールブック（`TryTRPG.md`）と、セッション進行のための GM 指示書（`CLAUDE.md`）、ダイスロール・状態遷移を公正に処理するための Python ツール（`TryTRPG.py`）で構成されます。
 
 ## 必要環境
 
@@ -24,19 +24,19 @@
 ## ダイスツール単体で使う
 
 ```bash
-python3 ttrpg.py judge --pl 1 --gm 0          # 通常判定（PL 能力 1 個）
-python3 ttrpg.py damage --weapon              # 度合判定（武器 +1）
-python3 ttrpg.py attack --pl 1 --gm 0 --weapon --state 健常
-python3 ttrpg.py apply-damage --state 重症1 --severity 重症
+python3 TryTRPG.py judge --pl 1 --gm 0          # 通常判定（PL 能力 1 個）
+python3 TryTRPG.py damage --weapon              # 度合判定（武器 +1）
+python3 TryTRPG.py attack --pl 1 --gm 0 --weapon --state 健常
+python3 TryTRPG.py apply-damage --state 重症1 --severity 重症
 ```
 
 ## ファイル構成
 
 | ファイル | 役割 |
 | :--- | :--- |
-| `TTRPG.md` | ルールブック本体（原典ベース） |
+| `TryTRPG.md` | ルールブック本体（原典ベース） |
 | `CLAUDE.md` | Claude 向けの GM 指示書（進行・判定・描写・セーブ運用） |
-| `ttrpg.py` | 判定・度合判定・状態遷移・戦闘 1 攻撃解決の CLI ツール |
+| `TryTRPG.py` | 判定・度合判定・状態遷移・戦闘 1 攻撃解決の CLI ツール |
 | `saves/` | セッションの途中セーブ置き場（gitignore 対象） |
 | `archive/` | 完走したシナリオのまとめ置き場（gitignore 対象） |
 
@@ -44,4 +44,4 @@ python3 ttrpg.py apply-damage --state 重症1 --severity 重症
 
 プロジェクト独自の成果物は **CC0 1.0**（パブリックドメイン献呈）。自由に利用・改変・再配布できます。
 
-`TTRPG.md` は原典（[Google Docs 上で公開](https://ur0.jp/CVWCU)）の「配布・改変・翻訳・販売・配信 自由」という利用規定に基づいて収録しています。詳細は [LICENSE](./LICENSE) を参照してください。
+`TryTRPG.md` は原典（[Google Docs 上で公開](https://ur0.jp/CVWCU)）の「配布・改変・翻訳・販売・配信 自由」という利用規定に基づいて収録しています。詳細は [LICENSE](./LICENSE) を参照してください。
