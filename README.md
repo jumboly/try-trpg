@@ -13,7 +13,7 @@
 
 1. 本リポジトリをクローン
    ```bash
-   git clone <this-repo-url> try-trpg
+   git clone https://github.com/jumboly/try-trpg.git
    cd try-trpg
    ```
 2. Claude Code をこのディレクトリで起動
