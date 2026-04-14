@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+.claude/settings.local.json
+
+# 個人のプレイ履歴は配布物に含めない
+saves/session_*.md
+archive/session_*.md
+characters/*.yaml
